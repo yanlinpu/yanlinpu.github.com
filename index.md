@@ -1,6 +1,6 @@
 ---
 layout: page
-title: yanlinpu
+title: Mr.闫
 tagline: Ruby on Rails
 ---
 {% include JB/setup %}
