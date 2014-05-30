@@ -1,0 +1,80 @@
+---
+layout: page
+title: 关于我
+header: Myself
+group: navigation
+---
+{% include JB/setup %}
+
+<link rel="stylesheet" href="assets/css/screen.css">
+<div class="timeliner_container">
+
+    <div id="timelineContainer" class="timelineContainer">
+
+        <div class="timelineToggle"><p><a class="expandAll">+ 展开所有</a></p></div>
+
+        <br class="clear">
+        <div class="timelineMajor">
+            <h2 class="timelineMajorMarker"><span>2013~now</span></h2>
+            <dl class="timelineMinor">
+                <dt id="20140530"><a>就职与华康同邦</a></dt>
+                <dd class="timelineEvent" id="20140530EX" style="display:none;">
+
+                    <p>2014.3～至今，就职与华康同邦科技有限公司。</p>
+                    <p>在公司对ruby on rails产生了兴趣。</p>
+                    <p>
+                        首先，来的第一天学习了<a href="http://www.codecademy.com/tracks/ruby" target="_blank">codecademy</a>中的ruby教程。
+                        然后在一个星期之内学习了<a href="http://railstutorial-china.org/" target="_blank">Ruby on Rails Tutorial</a>。
+                        在接下来的日子慢慢对ruby on rails的快速开发产生了兴趣，因为开发需要，熟练掌握了javascript jquery，以及了解了extjs 和 linux部署等等！
+                    </p>
+
+                    <br class="clear">
+                </dd><!-- /.timelineEvent -->
+            </dl><!-- /.timelineMinor -->
+
+        </div><!-- /.timelineMajor -->
+        <br class="clear">
+        <div class="timelineMajor">
+            <h2 class="timelineMajorMarker"><span>2009~2013</span></h2>
+            <dl class="timelineMinor">
+                <dt id="20130621"><a>毕业于华电</a></dt>
+                <dd class="timelineEvent" id="20130621EX" style="display:none;">
+
+                    <p>2009.9～2013.6就读于华电。</p>
+                    <p>在校所读专业为信息工程系软件专业。</p>
+
+                    <br class="clear">
+                </dd><!-- /.timelineEvent -->
+            </dl><!-- /.timelineMinor -->
+            <dl class="timelineMinor">
+                <dt id="20130301"><a>java培训</a></dt>
+                <dd class="timelineEvent" id="20130301EX" style="display:none;">
+                    <p>
+                        2012.12～2013.3参加国信蓝点培训机构，进行java培训，对以后的IT之路奠定了扎实基础。
+                    </p>
+
+                    <br class="clear">
+                </dd><!-- /.timelineEvent -->
+            </dl><!-- /.timelineMinor -->
+        </div><!-- /.timelineMajor -->
+        <br class="clear">
+    </div><!-- /#timelineContainer -->
+
+
+
+</div><!-- /.container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/colorbox.js"></script>
+<script type="text/javascript" src="assets/js/timeliner.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $.timeliner({
+            startOpen:[]
+        });
+        $.timeliner({
+            timelineContainer: '#timelineContainer_2'
+        });
+        // Colorbox Modal
+        $(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+    });
+</script>
