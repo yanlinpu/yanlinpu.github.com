@@ -13,17 +13,17 @@ tags : [rails, 数据库]
 
     rails g migration change_data_type_for_table_column
 
-##2.在model中链接数据库
+##2.在生成的文件中需要填写change_column方法
 
-经常这样写：
+通常会这样写：
 
     change_column :table_name, :column_name, :integer
 
-但是PostgresSQL会报错
+但是PostgresSQL会产生如下错误：
 
     PG::DatatypeMismatch: ERROR:  column "column_name" cannot be cast automatically to type integer
 
-需要修改为：
+为避免此错误，需修改为：
 
     class ChangeDataTypeForTableColumn < ActiveRecord::Migration
         def change
