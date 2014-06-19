@@ -7,8 +7,6 @@ tags : [rails, 数据库]
 ---
 {% include JB/setup %}
 
-{% include themes/twitter/time.html %}
-
 ##1.需要配置数据库的参数
 
     database.yml
