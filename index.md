@@ -4,7 +4,9 @@ title: Mr.闫
 tagline: Ruby on Rails
 ---
 {% include JB/setup %}
-{% include themes/custom-settings/time.html %}
+
+<!--{% include themes/custom-settings/time.html %}-->
+
 <ul class="posts">
   {% for post in site.posts limit:50 %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
