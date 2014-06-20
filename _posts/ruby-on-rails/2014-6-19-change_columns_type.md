@@ -31,3 +31,13 @@ tags : [rails, 数据库]
         end
     end
 
+但此方法，不支持其他数据库。比如mysql
+
+    Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'USING CAST(report_type AS integer) DEFAULT NULL' at line 1
+
+    change_column :table_name, :column_name, :integer
+
+还有一种方法就是先remove后add
+
+    remove_column :table, :column
+    add_column :table, :column, :integer
