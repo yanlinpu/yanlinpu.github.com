@@ -1,6 +1,6 @@
 ---
 layout: post
-title: golang上传和下载
+title: oss-aliyun-go
 category : rails
 tagline: 参考
 tags : [aliyun]
