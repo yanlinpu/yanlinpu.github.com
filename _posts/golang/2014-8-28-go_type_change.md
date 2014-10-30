@@ -1,7 +1,7 @@
 ---
 layout: post
 title: golang类型转换
-category : rails
+category : golang
 tagline: 原创
 tags : [golang, 类型转换]
 ---

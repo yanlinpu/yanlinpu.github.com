@@ -1,7 +1,7 @@
 ---
 layout: post
 title: oss-aliyun-go
-category : rails
+category : golang
 tagline: 参考
 tags : [aliyun]
 ---

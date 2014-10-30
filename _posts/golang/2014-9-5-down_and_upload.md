@@ -1,7 +1,7 @@
 ---
 layout: post
 title: golang上传和下载
-category : rails
+category : golang
 tagline: 参考
 tags : [golang,上传,下载]
 ---
